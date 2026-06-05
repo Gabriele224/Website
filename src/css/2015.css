@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0;
+    margin: 0;
+}
+
+.header-titolo {
+    background-color: red;
+    width: 100%;
+    margin: 0;
+    font-size: 0;
+    height: 190px;
+    display: block;
+}
+
+#title {
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    font-size: 40px;
+    justify-content: center;
+    display: inline-block;
+    margin: 40px;
+    margin-left: 40%;
+    font-family: fantasy;
+
+}
+
+/*Menù Primo livello , Secondo e Terzo Livello*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 20px 0;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+nav ul li:last-of-type a {
+    border-right: none;
+}
+
+nav ul li {
+    float: left;
+    width: calc(100% / 3);
+}
+
+nav>ul>li,
+nav ul>li>ul>li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: -8px;
+    width: 100%;
+    /**display: none;*/
+    opacity: 0;
+    transition: 1s;
+}
+
+nav ul ul li {
+    width: 100%;
+}
+
+nav ul li:hover>ul {
+    /*display: block;*/
+    opacity: 1;
+}
+
+nav ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+nav ul ul li a {
+    background-color: red;
+    border-bottom: 1px solid white;
+    border-right: none;
+}
+
+nav ul ul li:last-of-type a {
+    border-bottom: none;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+nav>ul>li:hover a {
+    border-bottom: 1px solid white;
+}
+
+
+.periodo {
+    border: 2px solid red;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 3px 6px;
+    width: 18%;
+    position: relative;
+    /* o absolute se vuoi posizionarlo fisso */
+    margin: 100px auto 20px auto;
+    /* lo centra e lo separa dal titolo */
+    font-size: 15px;
+
+}
+
+.impo-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 60px auto 20px auto;
+    color: white;
+    max-width: 1200px;
+}
+
+.impo-img div {
+    margin: 5px;
+    
+}
+
+.impo-img img {
+    width: 380px;
+    height: auto;
+    padding: 0;
+    /* Ridotto leggermente per bilanciare il bordo */
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    /* Aggiunge contrasto se lo sfondo è chiaro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Effetto più elegante */
+    transition: trasform 0.5s ease-in;
+}
+
+
+
+.impo-indirizzo {
+    background-color: red;
+    width: 100%;
+    margin: 0;
+    font-size: 0;
+    height: 190px;
+}
+
+#informazioni-sito {
+
+    color: whitesmoke;
+    font-size: 20px;
+    justify-content: center;
+    display: inline-block;
+    margin: 40px;
+    margin-left: 5%;
+}

@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0;
+    margin: 0;
+}
+
+.header-titolo {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+}
+
+#title {
+    color: #333;
+    text-shadow: 1px 1px 1px black;
+    font-size: 40px;
+    margin: 0;
+    font-family: fantasy;
+
+}
+
+/*Menù Primo livello , Secondo e Terzo Livello*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+nav ul li a {
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 20px 0;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+nav ul li:last-of-type a {
+    border-right: none;
+}
+
+nav > ul > li {
+    float: left;
+    width: calc(100% / 3);
+}
+
+nav>ul>li,
+nav ul>li>ul>li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    width: 100%;
+    /**display: none;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+nav ul ul li {
+    width: 100%;
+}
+
+nav ul li:hover > ul {
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+nav ul ul li a {
+    background-color: whitesmoke;
+    border-bottom: 1px solid black;
+    border-right: none;
+}
+
+nav ul ul li:last-of-type a {
+    border-bottom: none;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+nav>ul>li:hover a {
+    border-bottom: 1px solid black;
+}
+
+
+/*impostazioni immagine copertina*/
+#sfondo {
+
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+/*Impostazioni Footer*/
+.impo-indirizzo {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0;
+    font-size: 0;
+    height: 210px;
+}
+
+#informazioni-sito {
+
+    color: #333;
+    font-size: 20px;
+    justify-content: center;
+    display: inline-block;
+    margin: 40px;
+    margin-left: 5%;
+}
