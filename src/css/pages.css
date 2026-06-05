@@ -7,26 +7,25 @@ body {
     margin: 0;
 }
 
-.header-titolo {
-    background-color: red;
+/*.header-titolo {
+    background-color: whitesmoke;
     width: 100%;
     margin: 0;
-    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 190px;
-    display: block;
 }
 
 #title {
-    color: whitesmoke;
+    color: #333;
     text-shadow: 1px 1px 1px black;
     font-size: 40px;
-    justify-content: center;
-    display: inline-block;
-    margin: 40px;
-    margin-left: 40%;
+    margin: 0;
     font-family: fantasy;
 
 }
+*/
 
 /*Menù Primo livello , Secondo e Terzo Livello*/
 nav ul {
@@ -38,6 +37,7 @@ nav ul {
 }
 
 nav ul li a {
+    background-color: whitesmoke;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
@@ -45,14 +45,14 @@ nav ul li a {
     text-decoration: none;
     padding: 20px 0;
     text-align: center;
-    border-right: 1px solid white;
+    border-right: 1px solid black;
 }
 
 nav ul li:last-of-type a {
     border-right: none;
 }
 
-nav ul li {
+nav > ul > li {
     float: left;
     width: calc(100% / 3);
 }
@@ -65,19 +65,21 @@ nav ul>li>ul>li {
 nav ul ul {
     position: absolute;
     top: 100%;
-    left: -8px;
+    left: -1px;
     width: 100%;
     /**display: none;*/
+    visibility: hidden;
     opacity: 0;
-    transition: 1s;
+    transition: opacity 0.3s ease;
 }
 
 nav ul ul li {
     width: 100%;
 }
 
-nav ul li:hover>ul {
+nav ul li:hover > ul {
     /*display: block;*/
+    visibility: visible;
     opacity: 1;
 }
 
@@ -87,8 +89,8 @@ nav ul ul ul {
 }
 
 nav ul ul li a {
-    background-color: red;
-    border-bottom: 1px solid white;
+    background-color: whitesmoke;
+    border-bottom: 1px solid black;
     border-right: none;
 }
 
@@ -101,18 +103,18 @@ nav ul li a:hover {
 }
 
 nav>ul>li:hover a {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }
 
 
 .periodo {
-    border: 2px solid red;
+    border: 2px solid black;
     border-radius: 10px;
-    color: white;
-    background-color: red;
+    color: black;
+    background-color: whitesmoke;
     text-align: center;
     padding: 3px 6px;
-    width: 18%;
+    width: 20%;
     position: relative;
     /* o absolute se vuoi posizionarlo fisso */
     margin: 100px auto 20px auto;
@@ -153,20 +155,19 @@ nav>ul>li:hover a {
 
 
 
+/*Impostazioni Footer*/
 .impo-indirizzo {
-    background-color: red;
+    background-color: whitesmoke;
     width: 100%;
     margin: 0;
-    font-size: 0;
+    justify-content: center;
+    align-items: center;
     height: 190px;
 }
 
 #informazioni-sito {
 
-    color: whitesmoke;
+    color: #333;
     font-size: 20px;
-    justify-content: center;
-    display: inline-block;
-    margin: 40px;
-    margin-left: 5%;
+    margin: 0;
 }
