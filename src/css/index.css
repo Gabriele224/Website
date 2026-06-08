@@ -107,14 +107,46 @@ nav>ul>li:hover a {
 
 
 /*impostazioni immagine copertina*/
-#sfondo {
-
+#impo-sfondo {
+    background-size: cover;
     width: 100%;
     height: auto;
-    display: block;
 
 }
 
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: 2s;
+    top: 0;
+    left: -100%;
+}
+
+/*Immagine slider*/
+#slider{
+
+    border: 6px solid red;
+    position: relative;
+    height: 100svh;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+.visible{
+
+    left: 0;
+}
+
+.next{
+    left: 100%;
+    transition: 0s;
+}
 /*Impostazioni Footer*/
 .impo-indirizzo {
     background-color: whitesmoke;
