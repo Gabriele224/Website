@@ -107,13 +107,13 @@ nav>ul>li:hover a {
 
 
 /*impostazioni immagine copertina*/
-#impo-sfondo {
-    background-size: cover;
+/*#sfondo{
+    display: block;
     width: 100%;
     height: auto;
 
 }
-
+*/
 img{
     display: block;
     width: 100%;
@@ -127,7 +127,6 @@ img{
 
 /*Immagine slider*/
 #slider{
-
     border: 6px solid red;
     position: relative;
     height: 100svh;
@@ -136,6 +135,7 @@ img{
     max-width: 500px;
     margin: 0 auto;
     max-height: 300px;
+    margin: 120px auto 80px auto;
 }
 
 .visible{
@@ -152,6 +152,7 @@ img{
     background-color: whitesmoke;
     width: 100%;
     margin: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 190px;
