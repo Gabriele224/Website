@@ -3,7 +3,6 @@
 }
 
 body {
-    font-size: 0;
     margin: 0;
 }
 
@@ -27,6 +26,10 @@ body {
 }
 
 /*Menù Primo livello , Secondo e Terzo Livello*/
+nav{
+    position: relative;
+    z-index: 1000;
+}
 nav ul {
     margin: 0;
     padding: 0;
