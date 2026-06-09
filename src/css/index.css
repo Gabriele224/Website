@@ -25,6 +25,24 @@ body {
 
 }
 
+/*Impostazioni per il periodo*/
+
+.periodo {
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 3px 6px;
+    width: 20%;
+    position: relative;
+    /* o absolute se vuoi posizionarlo fisso */
+    margin: 100px auto 20px auto;
+    /* lo centra e lo separa dal titolo */
+    font-size: 15px;
+
+}
+
 /*Menù Primo livello , Secondo e Terzo Livello*/
 nav{
     position: relative;
@@ -129,7 +147,19 @@ img{
 }
 
 /*Immagine slider*/
-#slider{
+.slider {
+    border: 6px solid red;
+    position: relative;
+    height: 100svh;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    max-height: 300px;
+    margin: 120px auto 80px auto;
+}
+
+.slider2 {
     border: 6px solid red;
     position: relative;
     height: 100svh;
@@ -147,6 +177,16 @@ img{
 }
 
 .next{
+    left: 100%;
+    transition: 0s;
+}
+
+.visible2{
+
+    left: 0;
+}
+
+.next2{
     left: 100%;
     transition: 0s;
 }
