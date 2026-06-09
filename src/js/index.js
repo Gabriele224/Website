@@ -59,3 +59,34 @@ function slider2() {
     firstImg.classList.add("next2");
   }
 }
+
+window.addEventListener("load", imgLoaded3);
+
+function imgLoaded3() {
+
+  const sliderContainer3 = document.querySelector(".slider3");
+  sliderContainer3.addEventListener("click", slider3)
+}
+
+function slider3() {
+  /*document.querySelector(".visible").style.left = "-100%";
+  document.querySelector(".next").style.left = "0";*/
+
+  /*1)*/
+  let imgVisible = document.querySelector(".visible3");
+  imgVisible.classList.remove("visible3");
+
+  /*2)*/
+  let imgNext = document.querySelector(".next3");
+  imgNext.classList.replace("next3", "visible3");
+
+  /*3)*/
+  let imgNextVisible = document.querySelector(".visible3 + img");
+
+  if (imgNextVisible !== null){
+    imgNextVisible.classList.add("next3");
+  } else{
+    let firstImg = document.querySelector(".slider3 img:first-of-type");
+    firstImg.classList.add("next3");
+  }
+}

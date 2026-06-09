@@ -148,19 +148,7 @@ img{
 
 /*Immagine slider*/
 .slider {
-    border: 6px solid red;
-    position: relative;
-    height: 100svh;
-    overflow: hidden;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    max-height: 300px;
-    margin: 120px auto 80px auto;
-}
-
-.slider2 {
-    border: 6px solid red;
+    border: 8px solid whitesmoke;
     position: relative;
     height: 100svh;
     overflow: hidden;
@@ -181,6 +169,18 @@ img{
     transition: 0s;
 }
 
+.slider2 {
+    border: 8px solid whitesmoke;
+    position: relative;
+    height: 100svh;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    max-height: 300px;
+    margin: 120px auto 80px auto;
+}
+
 .visible2{
 
     left: 0;
@@ -190,6 +190,29 @@ img{
     left: 100%;
     transition: 0s;
 }
+
+.slider3 {
+    border: 8px solid whitesmoke;
+    position: relative;
+    height: 100svh;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    max-height: 300px;
+    margin: 120px auto 80px auto;
+}
+
+.visible3{
+
+    left: 0;
+}
+
+.next3{
+    left: 100%;
+    transition: 0s;
+}
+
 /*Impostazioni Footer*/
 .impo-indirizzo {
     background-color: whitesmoke;
