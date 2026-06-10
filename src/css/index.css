@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background-color: rgb(197, 192, 192);
 }
 
 .header-titolo {
@@ -209,6 +210,28 @@ img{
 }
 
 .next3{
+    left: 100%;
+    transition: 0s;
+}
+
+.slider4 {
+    border: 8px solid whitesmoke;
+    position: relative;
+    height: 100svh;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    max-height: 300px;
+    margin: 120px auto 80px auto;
+}
+
+.visible4{
+
+    left: 0;
+}
+
+.next4{
     left: 100%;
     transition: 0s;
 }

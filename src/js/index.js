@@ -90,3 +90,34 @@ function slider3() {
     firstImg.classList.add("next3");
   }
 }
+
+window.addEventListener("load", imgLoaded4);
+
+function imgLoaded4() {
+
+  const sliderContainer4 = document.querySelector(".slider4");
+  sliderContainer4.addEventListener("click", slider4)
+}
+
+function slider4() {
+  /*document.querySelector(".visible").style.left = "-100%";
+  document.querySelector(".next").style.left = "0";*/
+
+  /*1)*/
+  let imgVisible = document.querySelector(".visible4");
+  imgVisible.classList.remove("visible4");
+
+  /*2)*/
+  let imgNext = document.querySelector(".next4");
+  imgNext.classList.replace("next4", "visible4");
+
+  /*3)*/
+  let imgNextVisible = document.querySelector(".visible4 + img");
+
+  if (imgNextVisible !== null){
+    imgNextVisible.classList.add("next4");
+  } else{
+    let firstImg = document.querySelector(".slider4 img:first-of-type");
+    firstImg.classList.add("next4");
+  }
+}
